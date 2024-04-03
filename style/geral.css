@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    
+    background-color: rgb(255, 121, 244);
+   
+}
+header{
+background-color: rgb(71, 7, 105);
+ width: 100%;
+ height: 5rem;
+ position: fixed;
+ top: 0;
+ left: 0;
+ transition: 0.4s;
+}
+header .logo{
+    width: 4.5rem;
+   
+}
+.container{
+max-width: 1280px;
+margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-desktop{
+    width: 100%;
+    text-align: center;
+ 
+}
+.menu-mobile{
+    display: none;   
+}
+
+li{
+   
+    display: inline-block; 
+    margin: auto 2rem;
+}
+a{
+    font-size: 1.5rem;
+    color: rgb(255, 252, 252);
+    text-shadow: 0px 3px 1px rgb(41, 2, 47);
+}
+.btn-abrir-menu{
+    display: none;
+}
+/*-------------------------------------------------------baner-top-----------------------------------------------*/
+.baner-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px black;
+
+    height: 90vh;
+    margin-top: 5rem;
+    background: url('../img/capa-img/bol-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    & h1{
+        color: rgb(238, 229, 238);
+        text-shadow: 2px 1px 3px black;
+        font-size: 5rem;
+        margin: 2rem 0;
+    }
+    & .btn-contato{
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 2rem;
+        padding: 8px;
+        color: white;
+        background-color: rgb(198, 43, 226);
+        border:3px solid rgba(243, 204, 235, 0.492);
+        transition: all ease 0.5s;
+
+        &.btn-contato:hover {
+            
+            transform: scale(1.1);
+            color: blueviolet;
+            box-shadow: 1px 1px 8px rgb(216, 155, 227);
+            background-color: rgb(226, 112, 247);
+        }
+    }
+
+}
+/*--------------------------------------------------------------produtos-----------------------------------------*/
+.nossos-produtos{
+   
+    & h1{
+        color: blueviolet;
+        font-size: 3rem;
+        margin: 3rem auto;
+        text-align: center;
+        text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.408);
+      
+        &::after{
+            content: '';
+            width: 50%;
+            height: 3px;
+            background-color:white;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.produtos-cads{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+    flex-wrap: wrap;
+   
+& .cards{
+    
+   width: 30%;
+    background-color: rgb(172, 10, 166);
+    border-radius: 2rem 2rem 0;
+    border: 2px solid white;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.495);
+&.cards img{
+    width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+& .text-card{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+& .card-valor{
+   margin: 10px;
+    text-align: center;
+    color: rgb(161, 227, 213);
+}
+}
+}
+/*cardes escondidos*/
+
+.cards-4,.cards-5,.cards-6{
+    display: none;
+    
+}
+
+.btn-ver-mais{
+    display: block;
+    margin: 2rem auto;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 8px;
+    color: white;
+    background-color: rgb(221, 42, 252);
+    border:3px solid rgba(249, 245, 248, 0.871);
+    box-shadow: 1px 2px 4px black;
+    transition: all ease 0.5s;
+
+    &.btn-ver-mais:hover{
+        transform: scale(1.1);
+        color: blueviolet;
+        box-shadow: 1px 1px 8px rgb(216, 155, 227);
+        background-color: rgb(226, 112, 247);
+    }
+}
+/*----------------------------------------section converçao------------------------------------*/
+
+.conversao-container{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(219, 1, 253);
+   
+    
+    & .text-covercao{
+    & h1{
+        font-size: 3rem;
+        text-shadow: 2px 1px 5px black;
+        color: rgb(239, 205, 242);
+    }
+    & p{
+        font-size: 1.5rem;
+        text-shadow: 2px 1px 3px black;
+        color: rgb(238, 228, 239);
+    }
+    }
+
+    & .btn-convercao{
+            display: block;
+            margin: 1rem auto;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 2rem;
+            padding: 8px;
+            color: white;
+            background-color: rgb(221, 42, 252);
+            border:3px solid rgba(249, 245, 248, 0.871);
+            transition: all ease 0.5s;
+            box-shadow: 1px 2px 4px black;
+            &:hover{
+                
+                transform: scale(1.1);
+                color: blueviolet;
+                box-shadow: 1px 1px 8px rgb(216, 155, 227);
+                background-color: rgb(226, 112, 247);
+                box-shadow: 0px 1px 10px rgb(243, 242, 242);
+            }
+    }
+}
+
+/*--------------------------------------sobre___nos-----------------------------------------*/
+.section-sobre{
+    
+    width: 100%;
+    padding: 3rem 0rem 5rem 0rem;
+
+    background: url('../img/capa-img/bol-blur.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    & h1{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem ;
+        color: rgb(193, 18, 196);
+        text-shadow:2px 1px 3px rgba(0, 0, 0, 0.455); ;
+  
+        &::after{
+            content: '';
+            width: 70%;
+            height: 2px;
+            margin: auto;
+            display: block;
+            background-color: rgb(237, 227, 227);
+        }
+  }
+    & .img-sobre{
+        margin-bottom: 1rem;
+        width: 15rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color:  rgba(231, 180, 240, 0.762);
+        
+    }
+ }
+    & .sobre-text{
+        margin-top: 0;
+        height: 80%;
+        background-color: rgba(231, 180, 240, 0.762);
+        width: 80%;
+        color: rgb(0, 0, 0);
+        padding: 2rem;
+        border-radius: 0.5rem  5rem  0.5rem 5rem;
+        border: 2px solid white;
+        & p{
+            font-weight:500;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            line-height: 2rem;
+        }
+    }
+   
