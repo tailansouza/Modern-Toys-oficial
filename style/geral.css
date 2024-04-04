@@ -12,6 +12,7 @@ body{
    
 }
 header{
+ z-index: 90000;
 background-color: rgb(71, 7, 105);
  width: 100%;
  height: 5rem;
@@ -240,7 +241,7 @@ a{
         text-align: center;
         margin-bottom: 2rem ;
         color: rgb(193, 18, 196);
-        text-shadow:2px 1px 3px rgba(0, 0, 0, 0.455); ;
+        text-shadow:2px 1px 3px rgba(0, 0, 0, 0.455);
   
         &::after{
             content: '';
@@ -276,4 +277,99 @@ a{
             line-height: 2rem;
         }
     }
-   
+
+    /*-------------------------------------------contato--------------------------------------*/
+    .section-contato{
+        width: 100%;
+        height: 90vh;
+
+        & h1{
+            font-size: 3rem;
+            text-align: center;
+            margin: 2rem auto ;
+            color: rgb(193, 18, 196);
+            text-shadow:2px 1px 3px rgba(0, 0, 0, 0.455); ;
+      
+            &::after{
+                content: '';
+                width: 70%;
+                height: 2px;
+                margin: auto;
+                display: block;
+                background-color: rgb(237, 227, 227);
+            }
+        }
+    }
+    .container-contato{
+       
+        height: 70%;
+        width: 95%;
+        margin:5rem auto;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0);
+        
+        & .cards-contato{
+           gap: 1rem;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+ }
+       
+        & .atendentes-contato{
+            height: 90%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            border-radius:1rem;
+            border: 2px solid white;
+            background-color: rgb(228, 155, 228);
+          
+
+            & img{
+                position: relative;
+                top: -3rem;
+                border-radius: 50%;
+                
+            } 
+            & .text-contato{
+                background-color: rgb(230, 217, 233);
+                width: 100%;
+                height: 70%;
+                text-align: center;
+                border-radius:10px;
+                margin:0 auto ;
+            }
+            & h2{
+                color:  rgb(193, 18, 196);
+                margin: 0.5rem auto;
+            }
+            & p{
+                color: rgb(113, 35, 185);
+            }
+            & a{
+                width: 95%;
+            }
+            & button{
+                margin: 0.5rem auto;
+                cursor: pointer;
+                border-radius: 10px;
+                font-size: 1.5rem;
+                padding: 8px;
+                color: white;
+                background-color: rgb(221, 42, 252);
+                border:1px solid rgba(249, 245, 248, 0.871);
+                transition: all ease 0.5s;
+                box-shadow: 1px 2px 4px black;
+                &:hover{
+                    
+                    transform: scale(1.1);
+                    color: blueviolet;
+                    box-shadow: 1px 1px 8px rgb(216, 155, 227);
+                    background-color: rgb(226, 112, 247);
+                    box-shadow: 0px 1px 10px rgb(243, 242, 242);
+                }
+            }
+       }
+    }
