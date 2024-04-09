@@ -153,10 +153,52 @@ header .logo{
             line-height: 1.5rem;
         }
     }
+    .rede-sociais{
+        width: 100%;
+        margin-top: 1.5rem;
+        text-align: center;
+
+        & h2{
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem ;
+            color: rgb(193, 18, 196);
+            text-shadow:2px 1px 3px rgba(0, 0, 0, 0.455);
+        }
+        & .container-redes{
+  
+               & .btn-redes-insta{ 
+                    background: rgb(252,255,130);
+                    background: linear-gradient(127deg, rgba(252,255,130,1) 15%, rgba(231,167,91,1) 42%, rgba(210,55,211,1) 62%);
+
+                    & i{
+                        color: rgb(242, 240, 236);
+                    }
+                }
+
+               & .btn-redes-face{
+                    background: rgb(195,240,241);
+                    background: linear-gradient(127deg, rgba(195,240,241,1) 19%, rgba(80,123,218,1) 49%, rgba(55,76,211,1) 62%);
+                }
+
+
+                & a{
+                    font-size: 3rem;
+                   
+                }
+        
+        }
+
+    }
 
 
  /*-------------------------------------------contato--------------------------------------*/
 
+ .section-contato{
+    & h1{
+        font-size: 2rem;
+       }
+    }
 .container-contato{
    
     height: 70%;
@@ -164,7 +206,8 @@ header .logo{
     margin:5rem auto;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0);
-    
+
+  
     & .cards-contato{
         gap: 1rem;
         height: 100%;
@@ -196,7 +239,7 @@ header .logo{
         }
         & button{
             margin: 1rem auto;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             padding: 5px;
             &:hover{
                 transform:none;   
@@ -214,5 +257,6 @@ header .logo{
         }
    }
 }
+
 
 }
