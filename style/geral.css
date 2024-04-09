@@ -327,7 +327,7 @@ a{
     /*-------------------------------------------contato--------------------------------------*/
     .section-contato{
         width: 100%;
-        height: 90vh;
+        height: 95vh;
 
         & h1{
             font-size: 3rem;
@@ -348,7 +348,7 @@ a{
     }
     .container-contato{
        
-        height: 70%;
+        height: auto;
         width: 95%;
         margin:5rem auto;
         padding: 1rem;
@@ -420,7 +420,3 @@ a{
         }
    }
 
-.container-email{
-    margin-bottom: 0;
-    display: block;
-}
