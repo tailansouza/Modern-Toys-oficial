@@ -263,6 +263,28 @@ header .logo{
         }
     }
 }
+/*---------------------email----------------------*/
+.container-email{
+       
+    & h3{
+        font-size: 2rem;
+      
+    }
+    & .form-email{
+         width: 90%;
+  
+
+        }
+    }
+
+
+
+
 
 
 }
+
+
+
+
+
