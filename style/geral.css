@@ -331,17 +331,23 @@ a{
                 border-radius: 40%;
                 background-color: rgba(239, 74, 200, 0.311);
                 box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.467);
-                transition:all  1s ;
+                transition:all  0.5s ;
                }
                 .btn-redes-insta:hover{
                    
                     background: rgb(252,255,130);
                     background: linear-gradient(127deg, rgba(252,255,130,1) 15%, rgba(231,167,91,1) 42%, rgba(210,55,211,1) 62%);
+                    & i{
+                        color: white;
+                    }
                 }
 
                 .btn-redes-face:hover{
                     background: rgb(195,240,241);
                     background: linear-gradient(127deg, rgba(195,240,241,1) 19%, rgba(80,123,218,1) 49%, rgba(55,76,211,1) 62%);
+                    & i{
+                        color: white;
+                    }
                 }
 
 
@@ -405,6 +411,8 @@ a{
           
 
             & img{
+                width: 150px;
+               height: 150px;
                 position: relative;
                 top: -3rem;
                 border-radius: 50%;
