@@ -1,0 +1,112 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 148, 245);
+}
+.informacao{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+
+    & .slides{
+        display: flex;
+        width:400%;
+        height: 400px;
+
+        & input{
+            display: none;
+        }
+      
+ #radio1:checked ~.first{
+        margin-left: 0;
+    }
+ #radio2:checked ~.first{
+        margin-left: -25%;
+    }
+ #radio3:checked ~.first{
+        margin-left: -50%;
+    }
+ #radio4:checked ~.first{
+        margin-left: -75%;
+    }
+        
+
+    }
+    & .slide{
+        width: 25%;
+        position: relative;
+        transition: 1.5s;
+
+        & img{
+            width:100%;
+            height: 400px;
+        }
+    }
+
+    & .nave-manual{
+        position: absolute;
+        width: 600px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    
+
+        & .manual-btn{
+            border: 2px solid rgb(255, 175, 252);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+            &:hover{
+                background-color: blueviolet;
+            }
+        }
+    }
+ & .nave-auto{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 600px;
+    margin-top:360px;
+ }
+ & .nave-auto div{
+    border: 2px solid rgb(254, 251, 251);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+ }
+ #radio1:checked ~ .nave-auto .auto-btn1{
+    background-color: white;
+ }
+ #radio2:checked ~ .nave-auto .auto-btn2{
+    background-color: white;
+ }
+ #radio3:checked ~ .nave-auto .auto-btn3{
+    background-color: white;
+ }
+ #radio4:checked ~ .nave-auto .auto-btn4{
+    background-color: white;
+ }
+}

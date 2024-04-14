@@ -140,7 +140,7 @@ a{
    
 & .cards{
     
-     display: flex;
+    display: flex;
     flex-direction: column;
    width: 30%;
     background-color: rgb(172, 10, 166);
@@ -150,7 +150,7 @@ a{
    
 &.cards img{
     width: 100%;
-    height: 300px;
+    height:300px;
     border-radius: 2rem 2rem 0rem 0rem;
 }
 & .text-card{
@@ -176,7 +176,7 @@ a{
 
     & a{
         
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: rgb(139, 17, 252);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
     }
